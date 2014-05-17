@@ -295,4 +295,4 @@ public class LocalBroadcastManager {
         }
     }
 }
-{% highlight java %}
+{% endhighlight %}
