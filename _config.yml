@@ -5,7 +5,7 @@ auto: true
 pygments: true
 paginate: 5
 
-title : Make A Good App
+title : A Good Android Developer Need Read Android Source Code. 
 tagline: 爱生活，爱技术，爱科技，爱折腾
 author :
   name : Kevin Chen
@@ -27,7 +27,7 @@ author :
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 codepiano :
-  version : 0.3.0
+  version : 0.4.0
 
   # All links will be namespaced by BASE_PATH if defined.
   # Links in your website should always be prefixed with {{BASE_PATH}}
