@@ -23,7 +23,7 @@ real_name = '陈海军'
 description = 'Android Developer, Google Fans, Love Open Source'
 
 
-email = 'zhangqi.dev$#qq.com'.gsub('$#', '@')
+email = 'dilukevin$#gmail.com'.gsub('$#', '@')
 blog = 'http://KevinChen9117.github.io'
 github = 'https://github.com/KevinChen9117'
 

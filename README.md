@@ -8,5 +8,5 @@ Android开发者 ， 爱开源， 爱设计， 爱赚钱。互联网中毒症患
 
 ## 联系我
 
-* Github: [https://github.com/kevinchen9117](https://github.com/kevinchen9117)
+* Github: [https://github.com/KevinChen9117](https://github.com/KevinChen9117)
 
