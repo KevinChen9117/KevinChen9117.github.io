@@ -32,7 +32,7 @@ Retrofit, on the other hand, has you set the base endpoint url for all API calls
 
 In order to get some performance benchmarks, We wrote a sample application where we could control/simulate real-world API calls that Canvas for Android actually makes. It would also give me a little bit of experience actually using the libraries. To start off with, we wrote a very basic app that allowed me to toggle between an easy API with little JSON parsing and a complex API with a long response. The total number of API calls to make could be changed in the app as well. We also included the exact suite of API calls that the Canvas for Android Dashboard makes for a more real-world test. This benchmark showed me three things: 1) they were both significantly easier to use than AsyncTasks, 2) they both cleaned up the codebase, and 3) they were both a lot faster than what we were currently doing. Obviously the benchmarks fluctuated based upon network conditions; however, they consistently outperformed the way we are currently doing our networking.
 
-<img src="../image/volley_vs_retrofit.png" />
+<img src="../../../../image/volley_vs_retrofit.png" />
 
 In all three tests with varying repeats (1 – 25 times), Volley was anywhere from 50% to 75% faster. Retrofit clocked in at an impressive 50% to 90% faster than the AsyncTasks, hitting the same endpoint the same number of times. On the Dashboard test suite, this translated into loading/parsing the data several seconds faster. That is a massive real-world difference. In order to make the tests fair, the times for AsyncTasks/Volley included the JSON parsing as Retrofit does it for you automatically.
 
