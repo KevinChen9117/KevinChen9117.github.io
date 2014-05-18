@@ -1,0 +1,28 @@
+{% if paginator %}
+
+<div class="pager">
+    {% if paginator.previous_page_path %}
+        <a href="{{ paginator.previous_page_path }}" class="button previous">Previous Page</a>
+    {% endif %}
+
+    <!-- These numbers look really cool if we we them.
+       - just a simple matter of code, right?
+
+        <div class="pages">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <span>&hellip;</span>
+            <a href="#">20</a>
+        </div>
+
+    -->
+
+    {% if paginator.next_page_path %}
+        <a href="{{ paginator.next_page_path }}" class="button next">Next Page</a>
+    {% endif %}
+
+</div>
+
+{% endif %}

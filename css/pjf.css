@@ -1,0 +1,228 @@
+/* Make code look nicer */
+pre, code {
+    font-family: "Lucidia Console", monospace;
+    color: #333;
+}
+
+pre, figure {
+    border-radius: 0.4em;
+    background-color: rgba(230,230,230,0.75);
+    box-shadow: 0.1em 0.1em 0.05em 0.05em #888;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    display: inline-block;
+}
+
+/* Y'know, regular screen size */
+pre {
+    max-width: 80em;
+}
+
+/* Pull-right figures. */
+figure.right {
+    float: right;
+    max-width: 50%;
+}
+
+figure.smaller {
+    max-width: 25%;
+}
+
+/* Stop images/ from being too big */
+
+img {
+    max-width: 100%;
+}
+
+/* Don't underline our logo */
+/* The second selector is for the mobile version */
+
+#logo h1 a, .title h1 a {
+    text-decoration: none;
+}
+
+.find_me {
+    text-align: center;
+}
+
+.find_me i {
+    padding: 0.1em;
+}
+
+.find_me a {
+    text-decoration: none;
+}
+
+/* Make the pic of me look nice */
+
+img.me {
+    float: right;
+    max-width: 20%;
+    border-radius: 10%;
+}
+
+/* Tip box */
+
+.tip-box {
+    clear: left;
+    border-top:    1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    padding-top:    2em;
+    padding-bottom: 2em;
+}
+
+.tip-box p {
+    margin-bottom: 0.5em;
+}
+
+.tip-box i {
+    margin-bottom: 2em;
+}
+
+/* Responsive video containers, courtesy
+ * http://avexdesigns.com/responsive-youtube-embed/ 
+ */
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Fix bullet lists in posts */
+
+.is-post ul, 
+.is-post-excerpt ul {
+    list-style: disc;
+    padding-left: 1em;
+}
+
+.is-post ol, 
+.is-post-excerpt ol {
+    list-style: decimal;
+    padding-left: 1em;
+}
+
+
+/* Edit this post */
+
+.edit-post {
+    text-align: right;
+    font-size: smaller;
+    opacity: .5;
+    float: right;
+    clear: right;
+}
+
+.edit-post:hover {
+    opacity: 1.0;
+}
+
+/* AddThis */
+
+div.addthis_container, .share-container {
+    padding-top:    1em;
+    padding-bottom: 1em;
+}
+
+.addthis_container p, .share-container p {
+    float: left;
+    font-weight: bold;
+    color: #1B252A; /* Same as headings */
+    padding-right: 1em;
+    margin-top: 0.5ex;
+}
+
+.share-container a {
+    color: #2d3643;
+}
+
+div.share-buttons {
+    display: inline-block;
+}
+
+/* Rounded corners on the buttons, please */
+.addthis_32x32_style span {
+    border-radius: 10%;
+}
+
+/* H3-6 is often used in articles. Stop them from appearing
+ * so cramped when they display.
+ */
+
+h3, h4, h5, h6 {
+    padding-bottom: 1em;
+}
+
+.bitcoin {
+    max-height: 17ex;
+    margin-left 0.5em;
+}
+
+.attract-right {
+    float: right;
+    border-radius: 10%;
+    max-width: 20%;
+    margin-left: 2em;
+}
+
+.clear_right {
+    clear: right;
+}
+
+div.amplify {
+    border: 1px solid #bbb;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em 0.5em 0.0em #888;
+    padding: 1em;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2ex;
+    margin-bottom: 2ex;
+}
+
+a.plain {
+    text-decoration: none;
+    color: inherit;
+}
+
+.darker {
+    color: #2d3643;
+}
+
+div.pullquote {
+    clear: right;
+    float: right;
+    border: 1px solid #bbb;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em 0.5em 0.0em #888;
+    padding: 1em;
+    padding-bottom: 0;
+    margin-top: 2ex;
+    margin-bottom: 2ex;
+    margin-left: 2em;
+    max-width: 50%;
+}
+
+.pullquote p {
+    font-size: 120%;
+}
+
+.wide-image {
+    padding-bottom: 2em;
+}

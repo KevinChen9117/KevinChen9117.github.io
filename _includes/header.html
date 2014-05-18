@@ -1,0 +1,11 @@
+<header>
+    {% include attract_image.html %}
+    <h2 class="p-name">{{ post.title }}</h2>
+    {% if post.byline %}
+        <span class="byline">{{ post.byline }}</span>
+    {% else %}
+        <!-- This makes G+ bots happy -->
+        <span class="byline">By Paul Fenwick</span>
+    {% endif %}
+    {% include edit-post.html %}
+</header>

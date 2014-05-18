@@ -1,5 +1,34 @@
 ---
 layout: default
 ---
-{% include codepiano/setup %}
-{% include themes/twitter/post.html %}
+
+{% unless post %}
+    {% assign post = page %}
+{% endunless %}
+
+<article class="is-post h-entry">
+    {% include header.html %}
+    {% include info.html %}
+
+    {% if post.wide_image %}
+        <img src="{{ post.wide_image }}" class="wide-image" alt="" />
+    {% endif %}
+
+    <div class="e-content">
+        {{content}}
+    </div>
+
+    {% include share.html %}
+
+    {% include amplify.html %}
+
+    {% if post.footer %}
+        <hr />
+        {{ post.footer | markdownify }}
+    {% endif %}
+
+    {% include tip-box.html %}
+
+    {% include disqus.html %}
+
+</article>

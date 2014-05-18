@@ -1,0 +1,159 @@
+<!-- Sidebar -->
+<div id="sidebar">
+    <!-- Logo -->
+    <div id="logo"><h1><a href="/">{{ site.shortname }}</a></h1></div>
+
+    <section class="find_me">
+    {% if site.twitter %}
+        <a href="{{ site.twitter }}" rel="me"><i class="fa fa-twitter-square  fa-3x"  ></i></a>
+    {% endif %}
+    {% if site.facebook %}
+        <a href="{{ site.facebook }}" rel="me"><i class="fa fa-facebook-square fa-3x"  ></i></a>
+    {% endif %}
+    {% if site.github %}
+        <a href="{{ site.github }}" rel="me"><i class="fa fa-github-square   fa-3x"  ></i></a>
+    {% endif %}
+    <br />
+    {% if site.flickr %}
+        <a href="{{ site.flickr }}" rel="me"><i class="fa fa-flickr fa-3x"></i></a>
+    {% endif %}
+    {% if site.googleplus %}
+        <a href="{{ site.googleplus }}" rel="me"><i class="fa fa-google-plus-square fa-3x"  ></i></a>
+    {% endif %}
+    <a href="/feed.xml"><i class="fa fa-rss-square fa-3x"></i></a>
+    </section>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul>
+            <!-- <li class="current_page_item"><a href="/"></a></li> -->
+            <li><a href="/">Latest Posts</a></li>
+        {% for link in site.sidebar %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+        </ul>
+    </nav>
+
+    {% if site.search.google.cx %}
+        <section class="is-search">
+            <form id="cse-search-box" action="http://google.com/cse">
+            <input type="hidden" name="cx" value="{{ site.search.google.cx }}" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <input class="text" type="text" name="q" placeholder="Search" />
+        </form>
+        Search powered by Google.
+        </section>
+    {% endif %}
+
+    <!-- Text -->
+    <section class="is-text-style1">
+        <div class="inner">
+            <p>
+            {% if site.gittip %}
+                <a href="{{ site.gittip }}">
+                    <i class="fa fa-gittip fa-3x pull-left"></i>
+                </a>
+            {% endif %}
+            All text, style, and code on this website is free for you to use
+            under the <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a> license.
+            </p>
+        </div>
+    </section>
+
+    <!-- Recent Posts -->
+    <section class="is-recent-posts">
+        <header>
+            <h2>Recent Posts</h2>
+        </header>
+
+        <ul>
+        {% for post in site.posts limit:10 %}
+            <li><a href="{{ post.url }}">{{ post.title}}</a>
+        {% endfor %}
+        </ul>
+    </section>
+
+    <!-- Recent Comments -->
+    <!-- <section class="is-recent-comments">
+        <header>
+            <h2>Recent Comments</h2>
+        </header>
+        <ul>
+            <li>case on <a href="#">Now Full Cyborg</a></li>
+            <li>molly on <a href="#">Untitled Post</a></li>
+            <li>case on <a href="#">Temporal Flux</a></li>
+        </ul>
+    </section> -->
+
+    <!-- Calendar -->
+
+    <!-- <section class="is-calendar">
+        <div class="inner">
+            <table>
+                <caption>February 2013</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" title="Monday">M</th>
+                        <th scope="col" title="Tuesday">T</th>
+                        <th scope="col" title="Wednesday">W</th>
+                        <th scope="col" title="Thursday">T</th>
+                        <th scope="col" title="Friday">F</th>
+                        <th scope="col" title="Saturday">S</th>
+                        <th scope="col" title="Sunday">S</th>
+                    </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td colspan="4" class="pad"><span>&nbsp;</span></td>
+                        <td><span>1</span></td>
+                        <td><span>2</span></td>
+                        <td><span>3</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>4</span></td>
+                        <td><span>5</span></td>
+                        <td><a href="#">6</a></td>
+                        <td><span>7</span></td>
+                        <td><span>8</span></td>
+                        <td><span>9</span></td>
+                        <td><a href="#">10</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>11</span></td>
+                        <td><span>12</span></td>
+                        <td><span>13</span></td>
+                        <td class="today"><a href="#">14</a></td>
+                        <td><span>15</span></td>
+                        <td><span>16</span></td>
+                        <td><span>17</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>18</span></td>
+                        <td><span>19</span></td>
+                        <td><span>20</span></td>
+                        <td><span>21</span></td>
+                        <td><span>22</span></td>
+                        <td><a href="#">23</a></td>
+                        <td><span>24</span></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">25</a></td>
+                        <td><span>26</span></td>
+                        <td><span>27</span></td>
+                        <td><span>28</span></td>
+                        <td class="pad" colspan="3"><span>&nbsp;</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section> -->
+
+    <!-- Copyright -->
+    <div id="copyright">
+        <p>
+            &copy; {{ site.copyright }}<br />
+            Design: <a href="http://html5up.net/">HTML5 UP</a><br />
+            Site Based On: <a href="https://github.com/pjf/pjf.github.io">pjf.github.io</a>
+        </p>
+    </div>
+</div>
