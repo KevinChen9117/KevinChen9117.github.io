@@ -121,22 +121,3 @@ github: https://github.com/KevinChen9117
 # gittip: https://gittip.com/
 # flickr: https://flickr.com/photos/
 
-sidebar:
-#  - talks:
-#    title: "Talks"
-#    url: "/talks"
-  - Android_Blog:
-    title: "Android技术博客"
-    url: "/androidblog"
-  - Android:
-    title: "Android源码注释"
-    url: "/androidcodecomments"
-  - Open_Source:
-    title: "Android开源库"
-    url: "/androidopenlib"
-  - Design:
-    title: "设计"
-    url: "/design
-  - Other:
-    title: "其他博客"
-    url: "/otherblog"
