@@ -3,7 +3,7 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 pygments: true
-
+paginate: 5
 
 title : A Good Android Developer Need Read Android Source Code. 
 tagline: 爱生活，爱技术，爱科技，爱折腾
@@ -13,80 +13,6 @@ author :
   email : dilukevin@gmail.com
   github : https://github.com/KevinChen9117
 
-name: Kevin Chen
-shortname: pjf
-description: "Freedom Loving Scientist"
-github_repo: https://github.com/KevinChen9117/KevinChen9117.github.io
-avatar: pjf_square.jpg
-copyright: 2014 Kevin Chen
-
-
-# Comment out if not wanted, change if wanted.
-# twitter: https://twitter.com/
-# facebook: https://facebook.com/
-# googleplus: https://plus.google.com/+陈海军
-github: https://github.com/KevinChen9117
-# gittip: https://gittip.com/
-# flickr: https://flickr.com/photos/
-
-# February 11th, 2014 campaign.
-# See https://thedaywefightback.org for details.
-# The 'testing' option will enable the banner, even if it not Feb 11th
-
-thedaywefightback:
-    enable: false
-    testing: false
-
-# Flattr username
-flattr: _pjf
-
-paginate: 5
-
-scholar:
-    style: ieee
-
-exclude: 
-    - '_assets'
-    - 'bin'
-    - 'CNAME'
-    - 'Gemfile'
-    - 'Gemfile.lock'
-    - 'Rakefile.rb'
-    - 'README.md'
-
-search:
-    google:
-        cx: 'partner-pub-5040518412301671:2427815553'
-
-
-
-disqus:
-  shortname: pjf
-
-sidebar:
-#  - talks:
-#    title: "Talks"
-#    url: "/talks"
-  - Android_Blog:
-    title: "Android技术博客"
-    url: "/androidblog"
-  - Android:
-    title: "Android源码注释"
-    url: "/androidcodecomments"
-  - Open_Source:
-    title: "Android开源库"
-    url: "/androidopenlib"
-  - Design:
-    title: "设计"
-    url: "/design
-  - Other:
-    title: "其他博客"
-    url: "/otherblog"
-
-sitemap:
-    file: "/sitemap.xml"
-    exclude:
-        - "/feed.xml"
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -101,7 +27,7 @@ sitemap:
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 codepiano :
-  version : 0.5.0
+  version : 0.4.0
 
   # All links will be namespaced by BASE_PATH if defined.
   # Links in your website should always be prefixed with {{BASE_PATH}}
@@ -140,11 +66,11 @@ codepiano :
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change them here if needed.
   #
-  archive_path: /androidblog/posts.html
-  categories_path : /androidblog/categories.html
-  tags_path : /androidblog/posts.html
-  atom_path : /androidblog/atom.xml
-  rss_path : /androidblog/rss.xml
+  archive_path: /posts.html
+  categories_path : /categories.html
+  tags_path : /posts.html
+  atom_path : /atom.xml
+  rss_path : /rss.xml
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
@@ -153,7 +79,8 @@ codepiano :
   comments :
     provider : false
   #  provider : disqus
-
+    disqus :
+      short_name : stormsblog
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
@@ -183,4 +110,4 @@ codepiano :
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
   
-markdown: kramdown		
+markdown: kramdown
