@@ -9,7 +9,7 @@ tags: [sketch]
 {% include codepiano/setup %}
 
 Jean-Marc Denis（原文作者，前Sparrow设计师，现在在Google工作）在参加WWDC 2013时认识了Sketch的开发团队，所以在第一时间尝试了Sketch，当时由于一些功能的缺失，所以还是折回去使用Photoshop了。过了一段时间，他发现设计师社区开始疯狂着迷于这款新的设计工具，所以决定再试一试，想看看迭代了一段时间的Sketch现在能完成多少原先他需要用Photoshop来做的工作。现在，他80%的设计工作都是由Sketch来完成的，所以写了这篇文章来帮助大家一起了解Sketch。
-
+<!--more-->
 ## Photoshop并不是一款合适的界面设计工具
 
 为什么我们会期待一个新的设计工具？因为当我们更多的关注效率和关注协作，就越发现Photoshop已经不足以满足我们的期待了。下面看看具体的理由：

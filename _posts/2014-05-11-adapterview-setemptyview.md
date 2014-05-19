@@ -9,7 +9,7 @@ tags: [adapterview]
 {% include codepiano/setup %}
 
 当我们使用ListView或GridView的时候，当列表为空的时候，我们往往需要一个Loading或者一段提示文字又或者一个特殊的View来提示用户操作，这个时候就用到了setEmptyView()方法。
-
+<!--more-->
 setEmptyView()其实是AdapterView的方法，而我们开发中常用到的ListView, GridView, ExpandableListView等都是继承于AdapterView的，所以可以直接调用这个方法，下面来看看具体的如何使用：
 
 以默认显示一个提示文字的TextView为例,一般有以下两种用法：
