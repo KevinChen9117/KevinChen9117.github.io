@@ -3,7 +3,7 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 pygments: true
-paginate: 5
+paginate: 6
 
 title : A Good Android Developer Need Read Android Source Code. 
 tagline: 爱生活，爱技术，爱科技，爱折腾
