@@ -9,7 +9,7 @@ tags: [Android 开源库]
 {% include codepiano/setup %}
 
 We recently released a new version of our mobile app for Android. Although it was a huge improvement from previous installments in terms of features, design, and usability, there was one nagging issue in the back of our minds: speed. There are times when the app isn’t as snappy as we’d like it to be. After some profiling, benchmarks, and common sense, we determined that retrieving data from the API (the networking) was the bottleneck.
-
+<!--more-->
 ##The Old Way: AsyncTasks
 
 As of the latest version, we use the built-in AsyncTasks to retrieve data from Canvas’ servers. A quick Google search will explain the numerous issues with our approach: no orientation-change support, no ability to cancel network calls, as well as no easy way to make API calls in parallel. With the exception of Froyo and Gingerbread, AsyncTasks (by default) run in a serialized fashion. In a practical sense, this means that only one AsyncTask is running at any given time. Views that require multiple API calls (the DashBoard currently has 7) run extremely slow; sometimes taking multiple seconds to load.

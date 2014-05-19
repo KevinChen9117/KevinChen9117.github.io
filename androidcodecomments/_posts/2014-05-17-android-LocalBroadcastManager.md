@@ -8,6 +8,15 @@ tags: [Android 源码解析及应用]
 ---
 {% include codepiano/setup %}
 
+ Helper to register for and send broadcasts of Intents to local objects
+ within your process.  This is has a number of advantages over sending
+ global broadcasts with {@link android.content.Context#sendBroadcast}:
+ 
+  *  You know that the data you are broadcasting won't leave your app, so don't need to worry about leaking private data.
+  *  It is not possible for other applications to send these broadcasts to your app, 
+     so you don't need to worry about having security holes they can exploit.
+  *  It is more efficient than sending a global broadcast through the system.
+<!--more-->
 {% highlight java %}
 package android.support.v4.content;
 
