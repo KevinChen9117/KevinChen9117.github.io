@@ -77,11 +77,9 @@ Parameters:
         {% endif %}
 
         <div class="p-summary">
-            {% if post.content contains '<!--more-->' %}
-                {{ post.content | split:'<!--more-->' | first }}
-            {% else %}
-                {{ post.excerpt }}
-            {% endif %}
+		
+            {{post.content}}
+
         </div>
 
         <a href="{{ post.url }}">(read more...)</a>
