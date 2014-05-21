@@ -48,32 +48,26 @@
 
   </head>
 
-  <body id="scroll-pane" data-spy="scroll" data-target="#time-list-nav">
-    <div class="wrapper">
-      <!-- 导航条 -->
-      <div class="navbar">
-        <div class="navbar-inner row-fluid">
-          <div class="span2">
-          </div>
-          <div class="span8">
-            <a class="brand" href="{{ HOME_PATH }}">
-              <span class="site-author"> {{ site.author.name }} </span>
-              <span class="site-title"> /* {{ site.title }} */ </span>
-            </a>
-            <ul class="nav">
-              {% assign pages_list = site.pages %}
-              {% assign group = 'navigation' %}
-              {% include codepiano/navigation_list %}
-            </ul>
-          </div>
-          <div class="span2">
-          </div>
-        </div>
-      </div>
+    <!--
+        Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
+        Set it to "right-sidebar" to, you guessed it, position it on the right.
+    -->
+    <body class="left-sidebar">
+    {% include analytics.html %}
+    {% include hcard.html %}
+        <div id="wrapper">
+            <div id="content">
+                <div id="content-inner">
+                    {{content}}
 
-      <!-- 正文 -->
-      {{ content }}
-      
-    {% include codepiano/analytics %}
-  </body>
+                    {% include pager.html %}
+
+                </div>
+            </div>
+
+            {% include sidebar.html %}
+            
+        </div>
+    {% include end.html %}
+    </body>
 </html>
