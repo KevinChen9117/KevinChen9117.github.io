@@ -1,4 +1,4 @@
-/* Make code look nicer 
+
 pre, code {
     font-family: "Lucidia Console", monospace;
     color: #333;
@@ -16,7 +16,7 @@ pre, figure {
     margin-left: 2em;
     display: inline-block;
 }
-*/
+
 /* Y'know, regular screen size */
 pre {
     max-width: 80em;
