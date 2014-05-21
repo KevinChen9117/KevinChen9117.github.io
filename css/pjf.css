@@ -1,7 +1,9 @@
 
 pre, code {
     font-family: "Lucidia Console", monospace;
-    color: #333;
+	font-size: 15px;
+    background-color: #002B36;
+    color:#93A1A1;
 }
 
 pre, figure {
@@ -13,7 +15,6 @@ pre, figure {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     margin-bottom: 1em;
-    margin-left: 2em;
     display: inline-block;
 }
 
