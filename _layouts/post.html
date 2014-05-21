@@ -5,7 +5,7 @@ layout: default
 {% unless post %}
     {% assign post = page %}
 {% endunless %}
-
+{% include codepiano/setup %}
 <article class="is-post h-entry">
     {% include header.html %}
     {% include info.html %}
