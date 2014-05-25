@@ -20,6 +20,7 @@ application starts running. In this case, inside the splash screen we’ll provi
 progress bar while we’re checking whether or not we have internet access. If we do,
 we continue to another activity, but if we don’t, we’ll show the user an error mes-
 sage to prevent them from moving forward.
+<!--more-->
 To create the splash screen, we’ll have a presenter that will take care of the com-
 munication between the model and the view. In this particular case, the presenter
 will have two functions: one that knows when we’re online and another to take care of
