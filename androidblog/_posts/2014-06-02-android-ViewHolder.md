@@ -4,7 +4,7 @@ keywords: blog
 description: blog
 title: "Android ViewHolder Pattern"
 categories: [Android]
-tags: [Android 源码解析及应用]
+tags: [Android 代码片段]
 ---
 {% include codepiano/setup %}
 
