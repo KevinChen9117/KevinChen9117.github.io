@@ -21,8 +21,10 @@ public void onBackPressed() {
 		super.onBackPressed();
 	}else{
 		//第一次按下时，弹出Toast消息。
-		Toast.makeText(getApplicationContext(), "Press once again to exit !", Toast.LENGTH_SHORT).show();
-		//将系统时间设置给mBackPressed变量，两秒内再次按下的时候才会满足if条件。
+		Toast.makeText(getApplicationContext(), 
+		              "Press once again to exit !", Toast.LENGTH_SHORT).show();
+		//将系统时间设置给mBackPressed变量，
+		//两秒内再次按下的时候才会满足if条件。
 		mBackPressed = System.currentTimeMillis();
 	}
 }
