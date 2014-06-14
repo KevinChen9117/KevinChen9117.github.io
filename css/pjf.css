@@ -21,6 +21,7 @@ pre, figure {
 /* Y'know, regular screen size */
 pre {
     max-width: 80em;
+	width: 98%;
 }
 
 /* Pull-right figures. */
