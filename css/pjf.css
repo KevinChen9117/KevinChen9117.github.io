@@ -1,8 +1,9 @@
 
 pre, code {
-    font-family: "Lucidia Console",monospace;
-	font-size: 15px;
-
+    font-family: "Courier New", Courier, monospace;
+	font-size: 15px;	
+	white-space: pre-wrap;
+	word-wrap: break-word;
     color:#93A1A1;
 }
 
@@ -21,7 +22,7 @@ pre, figure {
 /* Y'know, regular screen size */
 pre {
     max-width: 80em;
-	width: 98%;
+	width: 96%;
 }
 
 /* Pull-right figures. */
