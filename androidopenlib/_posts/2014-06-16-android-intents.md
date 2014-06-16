@@ -440,3 +440,5 @@ public class IntentUtils {
     }
 }
 {% endhighlight %}
+
+Android Intents 开源地址：https://github.com/marvinlabs/android-intents
