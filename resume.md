@@ -17,6 +17,8 @@ skills = 'android, java, git, sql'
 email = 'dilukevin$#gmail.com'.gsub('$#', '@')
 blog = 'http://KevinChen9117.github.io'
 github = 'https://github.com/KevinChen9117'
+wechat = 'dilukevin'
+qq = '512276275'
 
 while true
   programing
